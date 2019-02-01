@@ -40,7 +40,7 @@ export default abstract class SimpleDayGridEventRenderer extends FgEventRenderer
 
     titleHtml =
       '<span class="fc-title">' +
-        (htmlEscape(eventDef.title || '') || '&nbsp;') + // we always want one line of height
+        (htmlEscape(eventDef.title || '') || '&nbsp;') + (htmlEscape(eventDef.title || '') || '&nbsp;') + // we always want one line of height
       '</span>'
 
     return '<a class="' + classes.join(' ') + '"' +
